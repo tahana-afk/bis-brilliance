@@ -158,8 +158,7 @@ const HeroSection = () => {
 
               {/* Privacy */}
               <p className="text-[11px] leading-relaxed text-bis-gray-medium">
-                Privacy & Opt-In: By clicking "NEXT," you certify that you have provided your
-                legal name and your own phone number, and you agree to our{" "}
+                By clicking "NEXT," you agree to our{" "}
                 <a href="#" className="underline">
                   Terms & Conditions
                 </a>{" "}
@@ -167,7 +166,7 @@ const HeroSection = () => {
                 <a href="#" className="underline">
                   Privacy Policy
                 </a>
-                .
+                . We take your information seriously and never sell it.
               </p>
 
               {/* CTA Button */}

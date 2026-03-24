@@ -13,11 +13,11 @@ const VideoSection = () => {
           style={{ color: "#C8FF00" }}
           className="text-xs uppercase tracking-[0.2em] font-semibold mb-3"
         >
-          HEAR HER STORY
+          HEAR IT FROM HER
         </p>
 
         {/* Heading */}
-        <h2 className="text-white mb-10">Victoria's BIS Media Journey</h2>
+        <h2 className="text-white mb-10">From Creator to Company — Victoria's Story</h2>
 
         {/* Video Player */}
         <div className="relative mx-auto max-w-3xl rounded-[16px] overflow-hidden shadow-2xl aspect-video">

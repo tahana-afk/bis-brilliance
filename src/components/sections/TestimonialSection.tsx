@@ -7,9 +7,9 @@ const TestimonialSection = () => {
             className="bis-lime-left-border pl-8 py-4"
           >
             <blockquote className="text-[18px] italic leading-relaxed text-bis-gray-text">
-              "BIS Media didn't just help us scale revenue—they helped us scale sanity. We went
-              from chaos to predictable. Now I know exactly what revenue looks like three months
-              ahead. And the community? It's become the best part of the business."
+              "I used to think I was building a business. I was building a job. BIS Media helped
+              me see the difference — and then helped me fix it. Now I own something real.
+              Something that runs without me. Something I'll still have in 10 years."
             </blockquote>
             <p className="mt-6 font-bold text-bis-dark text-base not-italic">— Victoria</p>
           </div>

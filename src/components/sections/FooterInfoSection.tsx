@@ -72,9 +72,9 @@ const FooterInfoSection = () => {
             </h4>
             <ul className="space-y-3">
               {[
-                "Success Stories",
-                "Pricing",
-                "Creator Journeys",
+                "Owner Stories",
+                "How It Works",
+                "The Movement",
                 "Blog",
                 "Podcast",
               ].map((item) => (

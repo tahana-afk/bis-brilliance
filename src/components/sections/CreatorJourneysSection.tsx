@@ -118,7 +118,7 @@ const CreatorJourneysSection = () => {
             style={{ borderColor: "#C8FF00", color: "#C8FF00" }}
             className="px-8 py-3.5 border-2 rounded-[25px] font-black uppercase tracking-wider text-sm hover:bg-bis-lime hover:text-bis-dark transition-all"
           >
-            MORE CREATOR JOURNEYS
+            SEE MORE OWNERS
           </button>
         </div>
       </div>

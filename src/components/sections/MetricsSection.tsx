@@ -103,10 +103,10 @@ const MetricsSection = () => {
           style={{ background: "#1a1a1a" }}
         >
           {[
-            { label: "Community", value: "50K+" },
-            { label: "CLV Increase", value: "+340%" },
-            { label: "Service Time", value: "-60%" },
-            { label: "Dev Cycles", value: "Faster" },
+            { label: "Owned Community", value: "50K+" },
+            { label: "Customer Value", value: "+340%" },
+            { label: "Time on Admin", value: "-60%" },
+            { label: "New Products Built", value: "4×" },
           ].map((item, i) => (
             <div
               key={item.label}
