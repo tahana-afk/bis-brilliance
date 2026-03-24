@@ -63,7 +63,7 @@ export const creators: Creator[] = [
   {
     slug: "victoria",
     name: "Victoria",
-    service: "The Accelerator",
+    service: "Physical Products + Launch Strategy",
     photo: "/lovable-uploads/632e6ce1-dcc5-4e5f-8637-dc50030b76c9.jpg",
     page: {
       heroPhoto: "/lovable-uploads/632e6ce1-dcc5-4e5f-8637-dc50030b76c9.jpg",
@@ -89,7 +89,7 @@ export const creators: Creator[] = [
   {
     slug: "sebastian",
     name: "Sebastian",
-    service: "The Blueprint",
+    service: "Digital Products + Community Build",
     photo: "/lovable-uploads/c0c80e9c-1462-4dd3-bbdd-9c6cb3b51000.jpg",
     page: {
       heroPhoto: "/lovable-uploads/c0c80e9c-1462-4dd3-bbdd-9c6cb3b51000.jpg",
@@ -106,107 +106,6 @@ export const creators: Creator[] = [
       videoHeading: "From Creator to Company — Sebastian's Story",
       testimonialQuote:
         "I finally stopped chasing brand deals and started building something I actually own. BIS Media made that possible.",
-    },
-  },
-
-  // ──────────────────────────────────────────────────────────
-  //  3. SOPHIA R.
-  //  ↓ Replace photo path and page copy when ready
-  // ──────────────────────────────────────────────────────────
-  {
-    slug: "sophia",
-    name: "Sophia R.",
-    service: "The Accelerator",
-    photo: "/lovable-uploads/632e6ce1-dcc5-4e5f-8637-dc50030b76c9.jpg",
-    page: {
-      heroPhoto: "/lovable-uploads/632e6ce1-dcc5-4e5f-8637-dc50030b76c9.jpg",
-      role: "Creator & Owner",
-      narrativeLabel: "From Creator to Owner",
-      narrativeHeading: "Sophia Built the Business She Always Deserved.",
-      narrativeParagraphs: [
-        "Add Sophia's story here. Describe where she started and what she was struggling with.",
-        "Explain what BIS Media built for her and why it mattered.",
-        "Share the transformation — what ownership looks like for her today.",
-      ],
-      resultsPhoto: "/lovable-uploads/632e6ce1-dcc5-4e5f-8637-dc50030b76c9.jpg",
-      videoId: "dQw4w9WgXcQ",
-      videoHeading: "From Creator to Company — Sophia's Story",
-      testimonialQuote: "Add Sophia's testimonial quote here.",
-    },
-  },
-
-  // ──────────────────────────────────────────────────────────
-  //  4. AMARA K.
-  // ──────────────────────────────────────────────────────────
-  {
-    slug: "amara",
-    name: "Amara K.",
-    service: "The Blueprint",
-    photo: "/lovable-uploads/c0c80e9c-1462-4dd3-bbdd-9c6cb3b51000.jpg",
-    page: {
-      heroPhoto: "/lovable-uploads/c0c80e9c-1462-4dd3-bbdd-9c6cb3b51000.jpg",
-      role: "Creator & Owner",
-      narrativeLabel: "From Creator to Owner",
-      narrativeHeading: "Amara Stopped Posting for Pennies. She Started Owning.",
-      narrativeParagraphs: [
-        "Add Amara's story here.",
-        "Explain the shift and what was built for her.",
-        "Describe what ownership means for her today.",
-      ],
-      resultsPhoto: "/lovable-uploads/c0c80e9c-1462-4dd3-bbdd-9c6cb3b51000.jpg",
-      videoId: "dQw4w9WgXcQ",
-      videoHeading: "From Creator to Company — Amara's Story",
-      testimonialQuote: "Add Amara's testimonial quote here.",
-    },
-  },
-
-  // ──────────────────────────────────────────────────────────
-  //  5. MIA C.
-  // ──────────────────────────────────────────────────────────
-  {
-    slug: "mia",
-    name: "Mia C.",
-    service: "The Spotlight",
-    photo: "/lovable-uploads/632e6ce1-dcc5-4e5f-8637-dc50030b76c9.jpg",
-    page: {
-      heroPhoto: "/lovable-uploads/632e6ce1-dcc5-4e5f-8637-dc50030b76c9.jpg",
-      role: "Creator & Owner",
-      narrativeLabel: "From Creator to Owner",
-      narrativeHeading: "Mia Chose Ownership Over Attention.",
-      narrativeParagraphs: [
-        "Add Mia's story here.",
-        "Explain the shift and what was built for her.",
-        "Describe what ownership means for her today.",
-      ],
-      resultsPhoto: "/lovable-uploads/632e6ce1-dcc5-4e5f-8637-dc50030b76c9.jpg",
-      videoId: "dQw4w9WgXcQ",
-      videoHeading: "From Creator to Company — Mia's Story",
-      testimonialQuote: "Add Mia's testimonial quote here.",
-    },
-  },
-
-  // ──────────────────────────────────────────────────────────
-  //  6. YUKI T.
-  // ──────────────────────────────────────────────────────────
-  {
-    slug: "yuki",
-    name: "Yuki T.",
-    service: "The Autopilot",
-    photo: "/lovable-uploads/c0c80e9c-1462-4dd3-bbdd-9c6cb3b51000.jpg",
-    page: {
-      heroPhoto: "/lovable-uploads/c0c80e9c-1462-4dd3-bbdd-9c6cb3b51000.jpg",
-      role: "Creator & Owner",
-      narrativeLabel: "From Creator to Owner",
-      narrativeHeading: "Yuki Built a Business That Runs Without Her.",
-      narrativeParagraphs: [
-        "Add Yuki's story here.",
-        "Explain the shift and what was built for her.",
-        "Describe what ownership means for her today.",
-      ],
-      resultsPhoto: "/lovable-uploads/c0c80e9c-1462-4dd3-bbdd-9c6cb3b51000.jpg",
-      videoId: "dQw4w9WgXcQ",
-      videoHeading: "From Creator to Company — Yuki's Story",
-      testimonialQuote: "Add Yuki's testimonial quote here.",
     },
   },
 ];
