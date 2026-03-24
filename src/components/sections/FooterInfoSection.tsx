@@ -40,18 +40,18 @@ const FooterInfoSection = () => {
             </div>
           </div>
 
-          {/* Middle: Services */}
+          {/* Middle: What We Build */}
           <div>
             <h4 className="text-white font-bold mb-5 text-sm uppercase tracking-widest">
-              Our Services
+              What We Build
             </h4>
             <ul className="space-y-3">
               {[
+                "Creator Businesses",
                 "Digital Products",
                 "Paid Communities",
-                "Monetization Systems",
-                "Business Funnels",
-                "Full Infrastructure",
+                "Revenue Systems",
+                "Scalable Infrastructure",
               ].map((item) => (
                 <li key={item}>
                   <a
