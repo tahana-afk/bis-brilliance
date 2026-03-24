@@ -1,33 +1,13 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import creator1 from "@/assets/creator-1.jpg";
-import creator2 from "@/assets/creator-2.jpg";
-import creator3 from "@/assets/creator-3.jpg";
-import creator4 from "@/assets/creator-4.jpg";
-import thumb1 from "@/assets/thumb-1.jpg";
-import thumb2 from "@/assets/thumb-2.jpg";
-import thumb3 from "@/assets/thumb-3.jpg";
-import thumb4 from "@/assets/thumb-4.jpg";
+import { Link } from "react-router-dom";
+import { creators } from "@/data/creators";
 
-const featuredCreators = [
-  { photo: creator1, name: "Sophia R.", service: "The Accelerator" },
-  { photo: creator2, name: "Amara K.", service: "The Blueprint" },
-  { photo: creator3, name: "Mia C.", service: "The Spotlight" },
-  { photo: creator4, name: "Yuki T.", service: "The Autopilot" },
-];
+// First 4 creators → featured grid cards
+const featuredCreators = creators.slice(0, 4);
 
-const carouselCreators = [
-  { photo: thumb1, name: "Jada M." },
-  { photo: thumb2, name: "Chloe N." },
-  { photo: thumb3, name: "Priya S." },
-  { photo: thumb4, name: "Lea V." },
-  { photo: thumb1, name: "Rena B." },
-  { photo: thumb2, name: "Tanya W." },
-  { photo: thumb3, name: "Diana F." },
-  { photo: thumb4, name: "Kira J." },
-  { photo: thumb1, name: "Ana G." },
-  { photo: thumb2, name: "Zoe L." },
-];
+// All creators → thumbnail carousel (repeat for visual richness)
+const carouselCreators = [...creators, ...creators].slice(0, 10);
 
 const CreatorJourneysSection = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -41,19 +21,21 @@ const CreatorJourneysSection = () => {
 
   return (
     <section className="bis-section bg-white">
-      <div className="bis-container">
+      {/* Wide container with generous horizontal margins */}
+      <div className="max-w-[1400px] mx-auto px-10 sm:px-16 lg:px-24">
         {/* Label */}
         <p className="text-xs uppercase tracking-[0.2em] font-semibold text-bis-gray-medium mb-3">
           From Creator to Owner
         </p>
         <h2 className="text-bis-dark mb-10">They Built. They Own. They Don't Look Back.</h2>
 
-        {/* Featured 4-column grid */}
+        {/* Featured 4-column grid — each card links to its creator page */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
           {featuredCreators.map((c) => (
-            <div
-              key={c.name}
-              className="relative aspect-[3/4] overflow-hidden rounded-[16px] group cursor-pointer"
+            <Link
+              key={c.slug}
+              to={`/${c.slug}`}
+              className="relative aspect-[3/4] overflow-hidden rounded-[16px] group cursor-pointer block"
             >
               <img
                 src={c.photo}
@@ -69,7 +51,7 @@ const CreatorJourneysSection = () => {
                   {c.service}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -88,7 +70,11 @@ const CreatorJourneysSection = () => {
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {carouselCreators.map((c, i) => (
-              <div key={i} className="flex-shrink-0 w-36">
+              <Link
+                key={`${c.slug}-${i}`}
+                to={`/${c.slug}`}
+                className="flex-shrink-0 w-36 group"
+              >
                 <div className="relative aspect-square overflow-hidden rounded-[8px]">
                   <img
                     src={c.photo}
@@ -96,11 +82,13 @@ const CreatorJourneysSection = () => {
                     loading="lazy"
                     width={512}
                     height={512}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <p className="text-center text-xs text-bis-gray-text mt-2 font-medium">{c.name}</p>
-              </div>
+                <p className="text-center text-xs text-bis-gray-text mt-2 font-medium group-hover:text-bis-dark transition-colors">
+                  {c.name}
+                </p>
+              </Link>
             ))}
           </div>
 

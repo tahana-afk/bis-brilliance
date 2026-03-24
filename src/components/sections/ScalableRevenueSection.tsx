@@ -1,16 +1,16 @@
-import gridCollage from "@/assets/grid-collage.jpg";
-import creator1 from "@/assets/creator-1.jpg";
-import creator2 from "@/assets/creator-2.jpg";
-import creator3 from "@/assets/creator-3.jpg";
-import creator4 from "@/assets/creator-4.jpg";
+import { creators } from "@/data/creators";
 
-// Individual square photos for the 5-column grid
-const gridPhotos = [creator1, creator2, creator3, creator4, creator1];
+// Pull the first 5 creators' photos for the grid
+const gridPhotos = creators.slice(0, 5).map((c) => ({
+  src: c.photo,
+  name: c.name,
+}));
 
 const ScalableRevenueSection = () => {
   return (
     <section className="bis-section" style={{ backgroundColor: "#1a1a1a" }}>
-      <div className="bis-container">
+      {/* Wider container with extra horizontal padding for breathing room */}
+      <div className="max-w-[1400px] mx-auto px-16 md:px-24 lg:px-32">
         {/* Heading */}
         <div className="text-center mb-12">
           <h2>
@@ -27,8 +27,8 @@ const ScalableRevenueSection = () => {
               className="aspect-square overflow-hidden rounded-[4px]"
             >
               <img
-                src={photo}
-                alt={`Creator ${i + 1}`}
+                src={photo.src}
+                alt={photo.name}
                 loading="lazy"
                 width={512}
                 height={512}
@@ -43,3 +43,4 @@ const ScalableRevenueSection = () => {
 };
 
 export default ScalableRevenueSection;
+
