@@ -19,16 +19,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
 
           {/* ── Creator case-study pages ── */}
-          {/* Routes are driven by src/data/creators.ts — add a creator there
-              and it automatically gets a page at /:slug              */}
-          <Route path="/victoria"  element={<CreatorPage />} />
-          <Route path="/sebastian" element={<CreatorPage />} />
-          <Route path="/sophia"    element={<CreatorPage />} />
-          <Route path="/amara"     element={<CreatorPage />} />
-          <Route path="/mia"       element={<CreatorPage />} />
-          <Route path="/yuki"      element={<CreatorPage />} />
-
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* Driven by src/data/creators.ts — add a creator there
+              and it gets a page at /:slug automatically            */}
+          <Route path="/:slug" element={<CreatorPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
