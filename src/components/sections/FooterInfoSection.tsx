@@ -47,11 +47,11 @@ const FooterInfoSection = () => {
             </h4>
             <ul className="space-y-3">
               {[
-                "The Blueprint",
-                "The Accelerator",
-                "The Autopilot",
-                "The Spotlight",
-                "Custom Packages",
+                "Digital Products",
+                "Paid Communities",
+                "Monetization Systems",
+                "Business Funnels",
+                "Full Infrastructure",
               ].map((item) => (
                 <li key={item}>
                   <a
