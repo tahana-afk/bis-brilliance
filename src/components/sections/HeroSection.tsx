@@ -2,10 +2,10 @@ import { useState } from "react";
 import victoriaHero from "@/assets/victoria-hero.jpg";
 
 const interests = [
-  "Content Strategy",
-  "Revenue Systems",
-  "Community Building",
-  "Brand Partnerships",
+  "Digital Products",
+  "Paid Community",
+  "Monetization Systems",
+  "Business Infrastructure",
 ];
 
 const industries = [
