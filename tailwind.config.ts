@@ -58,6 +58,7 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         // BIS Brand Colors
+        "bis-lime": "#C8FF00",
         bis: {
           lime: "#C8FF00",
           dark: "#1a1a1a",
