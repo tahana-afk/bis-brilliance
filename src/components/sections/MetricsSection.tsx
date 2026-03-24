@@ -18,7 +18,7 @@ const MetricsSection = () => {
     <section className="bis-section bg-bis-gray-light">
       <div className="bis-container">
         {/* Heading */}
-        <h2 className="text-center text-bis-dark mb-12">Real People, Real Results</h2>
+        <h2 className="text-center text-bis-dark mb-12">This Is What Ownership Looks Like</h2>
 
         {/* Before / After Carousel */}
         <div className="relative max-w-3xl mx-auto mb-14">
