@@ -57,33 +57,53 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // BIS Brand Colors
+        bis: {
+          lime: "#C8FF00",
+          dark: "#1a1a1a",
+          white: "#ffffff",
+          "gray-light": "#f8f8f8",
+          "gray-medium": "#999999",
+          "gray-text": "#555555",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        "btn": "25px",
+        "card-bis": "16px",
+      },
+      fontSize: {
+        "label-bis": ["13px", { letterSpacing: "0.1em", textTransform: "uppercase" }],
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(20px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        "slide-in": {
+          from: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(0)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-up": "fade-up 0.6s ease-out both",
+        "slide-in": "slide-in 0.4s ease-out",
+      },
+      spacing: {
+        "section": "5rem",
+        "section-sm": "3rem",
       },
     },
   },
