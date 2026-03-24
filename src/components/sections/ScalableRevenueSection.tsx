@@ -14,8 +14,8 @@ const ScalableRevenueSection = () => {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2>
-            <span style={{ color: "#C8FF00" }}>Scalable Revenue</span>
-            <span className="text-white"> — It's all we do</span>
+            <span style={{ color: "#C8FF00" }}>Creator-Owned Businesses</span>
+            <span className="text-white"> — It's all we build</span>
           </h2>
         </div>
 

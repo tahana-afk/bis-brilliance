@@ -7,23 +7,23 @@ const FooterCTASection = () => {
           style={{ color: "#C8FF00" }}
           className="text-xs uppercase tracking-[0.3em] font-semibold mb-4"
         >
-          Ready to become an empire?
+          Your audience is an asset. Start acting like it.
         </p>
 
         {/* Heading */}
         <h2 className="text-white mb-8 max-w-2xl mx-auto">
-          Ready for Your BIS Media Experience?
+          Ready to Stop Creating and Start Owning?
         </h2>
 
         {/* CTA */}
         <button className="px-10 py-4 bg-white text-bis-dark font-black uppercase tracking-wider rounded-[25px] hover:bg-bis-lime transition-colors text-sm mb-8">
-          BOOK MY FREE CONSULTATION
+          BUILD MY BUSINESS
         </button>
 
         {/* Disclaimer */}
         <p className="text-white/40 text-sm max-w-lg mx-auto leading-relaxed">
-          We work with 5–8 creators per cohort. Not everyone is a fit. Apply now to see if we
-          can help scale your business.
+          We take on a small number of creators each cohort. This is for people who are serious
+          about building something they own — not just something they manage.
         </p>
       </div>
     </section>

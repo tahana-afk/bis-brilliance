@@ -44,9 +44,9 @@ const CreatorJourneysSection = () => {
       <div className="bis-container">
         {/* Label */}
         <p className="text-xs uppercase tracking-[0.2em] font-semibold text-bis-gray-medium mb-3">
-          Creator Journeys
+          From Creator to Owner
         </p>
-        <h2 className="text-bis-dark mb-10">Our Creator Journeys</h2>
+        <h2 className="text-bis-dark mb-10">They Built. They Own. They Don't Look Back.</h2>
 
         {/* Featured 4-column grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
@@ -118,7 +118,7 @@ const CreatorJourneysSection = () => {
             style={{ borderColor: "#C8FF00", color: "#C8FF00" }}
             className="px-8 py-3.5 border-2 rounded-[25px] font-black uppercase tracking-wider text-sm hover:bg-bis-lime hover:text-bis-dark transition-all"
           >
-            MORE CREATOR JOURNEYS
+            SEE MORE OWNERS
           </button>
         </div>
       </div>

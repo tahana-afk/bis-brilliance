@@ -21,24 +21,24 @@ const ResultsSection = () => {
           <div className="space-y-6">
             <div className="flex items-start gap-3">
               <span style={{ color: "#C8FF00" }} className="text-2xl mt-1 leading-none">◆</span>
-              <h2 className="text-bis-dark">Results That Reflect The Effort</h2>
+              <h2 className="text-bis-dark">She Stopped Being a Creator. She Became an Owner.</h2>
             </div>
 
             <div className="space-y-5 text-bis-gray-text text-base leading-relaxed">
               <p>
-                Victoria is a creator and entrepreneur who has prioritized building sustainable
-                systems. She works with intention and is thoughtful about pricing, but felt she
-                hadn't reached her goals.
+                Victoria had the audience. She had the work ethic. She had the content. But
+                every month felt like starting over — revenue tied to posts, income tied to
+                algorithms she didn't control.
               </p>
               <p>
-                That's what led her to explore BIS Media. She was drawn to the guidance,
-                support, and clarity. Combined with a launch strategy that moved revenue from
-                seasonal spikes to predictable monthly income, it was the right fit.
+                That's when she came to BIS Media. We built the business behind her brand:
+                a digital product suite, a paid community, and a monetization system that
+                generates income whether she posts or not.
               </p>
               <p>
-                With Europe travel and new product drops planned, Victoria is excited to feel
-                confident in her growth. BIS Media is about aligning how she operates with how
-                she shows up.
+                Now Victoria doesn't just create. She owns. Her revenue is predictable. Her
+                business is scalable. And her influence finally works for her — not the other
+                way around.
               </p>
             </div>
 
@@ -47,7 +47,7 @@ const ResultsSection = () => {
                 style={{ backgroundColor: "#C8FF00" }}
                 className="px-8 py-3.5 font-black uppercase tracking-wider text-bis-dark rounded-[25px] hover:brightness-95 transition-all text-sm"
               >
-                Book My Free Consultation
+                Build My Business
               </button>
             </div>
           </div>

@@ -2,10 +2,10 @@ import { useState } from "react";
 import victoriaHero from "@/assets/victoria-hero.jpg";
 
 const interests = [
-  "Content Strategy",
-  "Revenue Systems",
-  "Community Building",
-  "Brand Partnerships",
+  "Digital Products",
+  "Paid Community",
+  "Monetization Systems",
+  "Business Infrastructure",
 ];
 
 const industries = [
@@ -67,12 +67,12 @@ const HeroSection = () => {
                 className="text-xl font-black uppercase tracking-tight text-bis-dark"
                 style={{ letterSpacing: "0.02em" }}
               >
-                DRAMATIC RESULTS.
+                STOP RENTING.
                 <br />
-                MINIMAL DOWNTIME
+                START OWNING.
               </h2>
               <p className="text-sm text-bis-gray-text mt-2 leading-relaxed">
-                Schedule a free consultation to see how BIS Media can scale your business.
+                You built the audience. Now build the company behind it. Book a free strategy call and find out what your influence is actually worth.
               </p>
             </div>
 
@@ -158,8 +158,7 @@ const HeroSection = () => {
 
               {/* Privacy */}
               <p className="text-[11px] leading-relaxed text-bis-gray-medium">
-                Privacy & Opt-In: By clicking "NEXT," you certify that you have provided your
-                legal name and your own phone number, and you agree to our{" "}
+                By clicking "NEXT," you agree to our{" "}
                 <a href="#" className="underline">
                   Terms & Conditions
                 </a>{" "}
@@ -167,7 +166,7 @@ const HeroSection = () => {
                 <a href="#" className="underline">
                   Privacy Policy
                 </a>
-                .
+                . We take your information seriously and never sell it.
               </p>
 
               {/* CTA Button */}
