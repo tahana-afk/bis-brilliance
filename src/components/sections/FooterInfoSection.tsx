@@ -17,8 +17,8 @@ const FooterInfoSection = () => {
               ></span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
-              We help creators build predictable, scalable revenue systems. Aligned with how you
-              operate and how you show up.
+              We turn creators into owners. We build the companies, products, and systems that
+              make influence worth something long after the algorithm changes.
             </p>
             <a
               href="tel:+18005550100"
