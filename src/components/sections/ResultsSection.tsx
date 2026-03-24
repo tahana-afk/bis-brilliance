@@ -8,13 +8,13 @@ const ResultsSection = () => {
           {/* Image */}
           <div className="relative">
             <img
-              src={victoriaResults}
+
               alt="Victoria working"
               loading="lazy"
               width={700}
               height={600}
-              className="w-full h-[480px] object-cover rounded-[16px]"
-            />
+              className="w-full h-[480px] object-cover rounded-[16px]" src="/lovable-uploads/c0c80e9c-1462-4dd3-bbdd-9c6cb3b51000.jpg" />
+            
           </div>
 
           {/* Narrative */}
@@ -44,16 +44,16 @@ const ResultsSection = () => {
             <div className="pt-4">
               <button
                 style={{ backgroundColor: "#C8FF00" }}
-                className="px-8 py-3.5 font-black uppercase tracking-wider text-bis-dark rounded-[25px] hover:brightness-95 transition-all text-sm"
-              >
+                className="px-8 py-3.5 font-black uppercase tracking-wider text-bis-dark rounded-[25px] hover:brightness-95 transition-all text-sm">
+                
                 Build My Business
               </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ResultsSection;
