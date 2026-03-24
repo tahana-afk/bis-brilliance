@@ -2,19 +2,19 @@ import { useState } from "react";
 import victoriaHero from "@/assets/victoria-hero.jpg";
 
 const interests = [
-  "Digital Products",
-  "Paid Community",
-  "Monetization Systems",
-  "Business Infrastructure",
-];
+"Digital Products",
+"Paid Community",
+"Monetization Systems",
+"Business Infrastructure"];
+
 
 const industries = [
-  "Creator / Influencer",
-  "Coach / Consultant",
-  "E-commerce",
-  "Service Business",
-  "Other",
-];
+"Creator / Influencer",
+"Coach / Consultant",
+"E-commerce",
+"Service Business",
+"Other"];
+
 
 const HeroSection = () => {
   const [form, setForm] = useState({
@@ -24,15 +24,15 @@ const HeroSection = () => {
     interests: [] as string[],
     phone: "",
     zip: "",
-    industry: "",
+    industry: ""
   });
 
   const toggleInterest = (interest: string) => {
     setForm((prev) => ({
       ...prev,
-      interests: prev.interests.includes(interest)
-        ? prev.interests.filter((i) => i !== interest)
-        : [...prev.interests, interest],
+      interests: prev.interests.includes(interest) ?
+      prev.interests.filter((i) => i !== interest) :
+      [...prev.interests, interest]
     }));
   };
 
@@ -42,17 +42,17 @@ const HeroSection = () => {
         {/* Left: Image */}
         <div className="relative flex-1 min-h-[400px] lg:min-h-[650px] overflow-hidden">
           <img
-            src={victoriaHero}
+
             alt="Victoria - BIS Media Creator"
             className="w-full h-full object-cover object-top"
-            style={{ minHeight: 400 }}
-          />
+            style={{ minHeight: 400 }} src="/lovable-uploads/632e6ce1-dcc5-4e5f-8637-dc50030b76c9.jpg" />
+          
           <div className="absolute bottom-8 left-8 text-white">
             <h1 className="text-5xl font-black text-white drop-shadow-lg">Victoria</h1>
             <p
               style={{ color: "#C8FF00" }}
-              className="text-sm uppercase tracking-widest font-semibold mt-1 drop-shadow"
-            >
+              className="text-sm uppercase tracking-widest font-semibold mt-1 drop-shadow">
+              
               Creator & Entrepreneur
             </p>
           </div>
@@ -65,8 +65,8 @@ const HeroSection = () => {
             <div className="bis-lime-border pt-6 px-6 pb-2">
               <h2
                 className="text-xl font-black uppercase tracking-tight text-bis-dark"
-                style={{ letterSpacing: "0.02em" }}
-              >
+                style={{ letterSpacing: "0.02em" }}>
+                
                 STOP RENTING.
                 <br />
                 START OWNING.
@@ -83,14 +83,14 @@ const HeroSection = () => {
                   className="input-bis"
                   placeholder="First Name"
                   value={form.firstName}
-                  onChange={(e) => setForm({ ...form, firstName: e.target.value })}
-                />
+                  onChange={(e) => setForm({ ...form, firstName: e.target.value })} />
+                
                 <input
                   className="input-bis"
                   placeholder="Last Name"
                   value={form.lastName}
-                  onChange={(e) => setForm({ ...form, lastName: e.target.value })}
-                />
+                  onChange={(e) => setForm({ ...form, lastName: e.target.value })} />
+                
               </div>
 
               {/* Email */}
@@ -99,8 +99,8 @@ const HeroSection = () => {
                 type="email"
                 placeholder="Email"
                 value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
-              />
+                onChange={(e) => setForm({ ...form, email: e.target.value })} />
+              
 
               {/* Interests */}
               <div>
@@ -108,20 +108,20 @@ const HeroSection = () => {
                   Area(s) of Interest
                 </p>
                 <div className="grid grid-cols-2 gap-1">
-                  {interests.map((item) => (
-                    <label
-                      key={item}
-                      className="flex items-center gap-2 cursor-pointer text-sm text-bis-gray-text hover:text-bis-dark py-1"
-                    >
+                  {interests.map((item) =>
+                  <label
+                    key={item}
+                    className="flex items-center gap-2 cursor-pointer text-sm text-bis-gray-text hover:text-bis-dark py-1">
+                    
                       <input
-                        type="checkbox"
-                        checked={form.interests.includes(item)}
-                        onChange={() => toggleInterest(item)}
-                        className="accent-bis-lime w-4 h-4"
-                      />
+                      type="checkbox"
+                      checked={form.interests.includes(item)}
+                      onChange={() => toggleInterest(item)}
+                      className="accent-bis-lime w-4 h-4" />
+                    
                       {item}
                     </label>
-                  ))}
+                  )}
                 </div>
               </div>
 
@@ -132,28 +132,28 @@ const HeroSection = () => {
                   type="tel"
                   placeholder="Phone"
                   value={form.phone}
-                  onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                />
+                  onChange={(e) => setForm({ ...form, phone: e.target.value })} />
+                
                 <input
                   className="input-bis"
                   placeholder="Zip Code"
                   value={form.zip}
-                  onChange={(e) => setForm({ ...form, zip: e.target.value })}
-                />
+                  onChange={(e) => setForm({ ...form, zip: e.target.value })} />
+                
               </div>
 
               {/* Industry */}
               <select
                 className="input-bis"
                 value={form.industry}
-                onChange={(e) => setForm({ ...form, industry: e.target.value })}
-              >
+                onChange={(e) => setForm({ ...form, industry: e.target.value })}>
+                
                 <option value="">Industry</option>
-                {industries.map((ind) => (
-                  <option key={ind} value={ind}>
+                {industries.map((ind) =>
+                <option key={ind} value={ind}>
                     {ind}
                   </option>
-                ))}
+                )}
               </select>
 
               {/* Privacy */}
@@ -173,16 +173,16 @@ const HeroSection = () => {
               <button
                 type="button"
                 style={{ backgroundColor: "#C8FF00" }}
-                className="w-full py-3.5 font-black uppercase tracking-wider text-bis-dark rounded-[25px] hover:brightness-95 transition-all text-sm"
-              >
+                className="w-full py-3.5 font-black uppercase tracking-wider text-bis-dark rounded-[25px] hover:brightness-95 transition-all text-sm">
+                
                 NEXT
               </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
