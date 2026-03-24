@@ -67,12 +67,12 @@ const HeroSection = () => {
                 className="text-xl font-black uppercase tracking-tight text-bis-dark"
                 style={{ letterSpacing: "0.02em" }}
               >
-                DRAMATIC RESULTS.
+                STOP RENTING.
                 <br />
-                MINIMAL DOWNTIME
+                START OWNING.
               </h2>
               <p className="text-sm text-bis-gray-text mt-2 leading-relaxed">
-                Schedule a free consultation to see how BIS Media can scale your business.
+                You built the audience. Now build the company behind it. Book a free strategy call and find out what your influence is actually worth.
               </p>
             </div>
 
