@@ -74,10 +74,10 @@ const MetricsSection = () => {
         {/* Metrics Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {[
-            { label: "Annual Revenue — Before", value: "$180K", sub: "annual", accent: false },
-            { label: "Revenue at Risk", value: "70%", sub: "in 60 days", accent: false },
-            { label: "Annual Revenue — After", value: "$730K", sub: "annual", accent: true },
-            { label: "Monthly Recurring", value: "$28K+", sub: "every month", accent: true },
+          { label: "Revenue Before BIS", value: "$180K", sub: "creator income", accent: false },
+            { label: "Income Tied to Content", value: "70%", sub: "gone in 60 days", accent: false },
+            { label: "Revenue After BIS", value: "$730K", sub: "business income", accent: true },
+            { label: "Predictable Monthly", value: "$28K+", sub: "owns it forever", accent: true },
           ].map((m) => (
             <div
               key={m.label}
