@@ -26,19 +26,18 @@ const ResultsSection = () => {
 
             <div className="space-y-5 text-bis-gray-text text-base leading-relaxed">
               <p>
-                Victoria had the audience. She had the work ethic. She had the content. But
-                every month felt like starting over — revenue tied to posts, income tied to
-                algorithms she didn't control.
+                Victoria had the audience, the work ethic, and the content.
+                But every month felt like starting over — her income tied to
+                posts, her growth tied to algorithms she didn't control.
               </p>
               <p>
-                That's when she came to BIS Media. We built the business behind her brand:
-                a digital product suite, a paid community, and a monetization system that
-                generates income whether she posts or not.
+                So she stopped renting her influence. We built the business
+                behind her brand — one that generates income whether she posts
+                or not.
               </p>
               <p>
-                Now Victoria doesn't just create. She owns. Her revenue is predictable. Her
-                business is scalable. And her influence finally works for her — not the other
-                way around.
+                Now Victoria doesn't just create. She owns. And the difference
+                isn't just financial — it's the freedom to build on her own terms.
               </p>
             </div>
 

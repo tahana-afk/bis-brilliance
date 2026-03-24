@@ -1,122 +1,98 @@
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import beforeImg from "@/assets/before-image.jpg";
-import afterImg from "@/assets/after-image.jpg";
+const identityCards = [
+  {
+    title: "Owns What They Build",
+    sub: "No longer dependent on platforms or algorithms",
+    keyword: "Owns",
+  },
+  {
+    title: "Revenue That Doesn't Reset",
+    sub: "Income that continues beyond content cycles",
+    keyword: "Revenue",
+  },
+  {
+    title: "Systems Over Effort",
+    sub: "The business works even when they're offline",
+    keyword: "Systems",
+  },
+  {
+    title: "Built to Scale",
+    sub: "Products, communities, and assets that grow over time",
+    keyword: "Built",
+  },
+];
 
-const slides = [
-  { before: beforeImg, after: afterImg, name: "Victoria" },
-  { before: beforeImg, after: afterImg, name: "Client 2" },
+const impactItems = [
+  { title: "Owns the Audience", sub: "Not just access — control" },
+  { title: "Increases Lifetime Value", sub: "Not just more customers — deeper ones" },
+  { title: "Removes Dependency", sub: "Less reliance on constant posting" },
+  { title: "Expands the Business", sub: "More than one way to make money" },
 ];
 
 const MetricsSection = () => {
-  const [current, setCurrent] = useState(0);
-
-  const prev = () => setCurrent((c) => (c === 0 ? slides.length - 1 : c - 1));
-  const next = () => setCurrent((c) => (c === slides.length - 1 ? 0 : c + 1));
-
   return (
-    <section className="bis-section bg-bis-gray-light">
+    <section className="bis-section" style={{ backgroundColor: "hsl(var(--bis-gray-light))" }}>
       <div className="bis-container">
         {/* Heading */}
-        <h2 className="text-center text-bis-dark mb-12">This Is What Ownership Looks Like</h2>
+        <h2 className="text-center mb-3" style={{ color: "hsl(var(--bis-dark))" }}>
+          This Is What Ownership Looks Like
+        </h2>
+        <p className="text-center mb-14 text-sm uppercase tracking-[0.2em]" style={{ color: "hsl(var(--bis-gray-medium))" }}>
+          The shift from creator to owner changes everything
+        </p>
 
-        {/* Before / After Carousel */}
-        <div className="relative max-w-3xl mx-auto mb-14">
-          <div className="grid grid-cols-2 gap-1 rounded-[16px] overflow-hidden shadow-lg">
-            <div className="relative">
-              <img
-                src={slides[current].before}
-                alt="Before"
-                loading="lazy"
-                width={600}
-                height={700}
-                className="w-full h-80 object-cover"
-              />
-              <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs uppercase tracking-widest px-3 py-1 rounded-full">
-                Before
-              </div>
-            </div>
-            <div className="relative">
-              <img
-                src={slides[current].after}
-                alt="After"
-                loading="lazy"
-                width={600}
-                height={700}
-                className="w-full h-80 object-cover"
-              />
-              <div
-                style={{ backgroundColor: "#C8FF00" }}
-                className="absolute bottom-3 left-3 text-bis-dark text-xs uppercase tracking-widest px-3 py-1 rounded-full font-semibold"
-              >
-                After
-              </div>
-            </div>
-          </div>
-
-          {/* Arrows */}
-          <button
-            onClick={prev}
-            className="absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 bg-white shadow-lg rounded-full flex items-center justify-center hover:bg-bis-lime transition-colors z-10"
-          >
-            <ChevronLeft size={20} />
-          </button>
-          <button
-            onClick={next}
-            className="absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 bg-white shadow-lg rounded-full flex items-center justify-center hover:bg-bis-lime transition-colors z-10"
-          >
-            <ChevronRight size={20} />
-          </button>
-
-          <p className="text-center text-bis-gray-medium text-sm mt-4">{slides[current].name}</p>
-        </div>
-
-        {/* Metrics Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-          {[
-          { label: "Revenue Before BIS", value: "$180K", sub: "creator income", accent: false },
-            { label: "Income Tied to Content", value: "70%", sub: "gone in 60 days", accent: false },
-            { label: "Revenue After BIS", value: "$730K", sub: "business income", accent: true },
-            { label: "Predictable Monthly", value: "$28K+", sub: "owns it forever", accent: true },
-          ].map((m) => (
+        {/* Identity Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+          {identityCards.map((card) => (
             <div
-              key={m.label}
-              className="bg-white rounded-[16px] p-6 text-center shadow-sm border border-border"
+              key={card.title}
+              className="group bg-white rounded-[16px] p-7 border border-border
+                         transition-all duration-300 ease-out
+                         hover:-translate-y-1 hover:shadow-[0_8px_40px_-12px_rgba(200,255,0,0.25)]
+                         cursor-default"
             >
-              <p className="text-xs uppercase tracking-widest text-bis-gray-medium mb-2">
-                {m.label}
-              </p>
-              <p
-                className="text-4xl font-black"
-                style={{ color: m.accent ? "#C8FF00" : "#1a1a1a" }}
+              {/* Lime dot accent */}
+              <span
+                className="inline-block w-2 h-2 rounded-full mb-5 transition-transform duration-300 group-hover:scale-125"
+                style={{ backgroundColor: "hsl(var(--bis-lime))" }}
+              />
+              <h3
+                className="font-black text-lg leading-tight mb-3"
+                style={{ color: "hsl(var(--bis-dark))" }}
               >
-                {m.value}
+                {/* Highlight first word in neon lime */}
+                <span style={{ color: "hsl(var(--bis-lime))" }}>{card.keyword} </span>
+                {card.title.slice(card.keyword.length)}
+              </h3>
+              <p className="text-sm leading-relaxed" style={{ color: "hsl(var(--bis-gray-medium))" }}>
+                {card.sub}
               </p>
-              <p className="text-sm text-bis-gray-medium mt-1">{m.sub}</p>
             </div>
           ))}
         </div>
 
-        {/* Impact Box */}
+        {/* Impact Bar — dark section */}
         <div
-          className="rounded-[16px] grid grid-cols-2 lg:grid-cols-4 gap-0 overflow-hidden border border-border"
-          style={{ background: "#1a1a1a" }}
+          className="rounded-[16px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 overflow-hidden border border-white/5"
+          style={{ background: "hsl(var(--bis-dark))" }}
         >
-          {[
-            { label: "Owned Community", value: "50K+" },
-            { label: "Customer Value", value: "+340%" },
-            { label: "Time on Admin", value: "-60%" },
-            { label: "New Products Built", value: "4×" },
-          ].map((item, i) => (
+          {impactItems.map((item, i) => (
             <div
-              key={item.label}
-              className={`p-6 text-center ${i < 3 ? "border-r border-white/10" : ""} ${i >= 2 ? "border-t border-white/10 lg:border-t-0" : ""}`}
+              key={item.title}
+              className={[
+                "p-8 text-center transition-colors duration-200 hover:bg-white/5",
+                i < impactItems.length - 1 ? "lg:border-r border-white/10" : "",
+                i >= 2 ? "border-t border-white/10 lg:border-t-0" : "",
+                i === 1 ? "border-t border-white/10 sm:border-t-0" : "",
+              ].join(" ")}
             >
-              <p style={{ color: "#C8FF00" }} className="text-2xl font-black">
-                {item.value}
+              <p
+                className="text-base font-black mb-1"
+                style={{ color: "hsl(var(--bis-lime))" }}
+              >
+                {item.title}
               </p>
-              <p className="text-white/60 text-sm uppercase tracking-widest mt-1">
-                {item.label}
+              <p className="text-xs uppercase tracking-widest" style={{ color: "rgba(255,255,255,0.45)" }}>
+                {item.sub}
               </p>
             </div>
           ))}
